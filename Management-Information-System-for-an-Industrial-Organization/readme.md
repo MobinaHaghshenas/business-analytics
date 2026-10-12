@@ -15,9 +15,4 @@ This project brings together process models, a SQL Server database script, and a
 2. Review and run the main database script in a test SQL Server database only after checking/fixing its schema and data-integrity issues.
 3. Open the Power BI report and compare its fields and measures with the database.
 
-## Important notes
 
-- The Power BI file is provided as a report artifact; a live connection to the SQL script has not been verified.
-- The SQL scripts may require corrections before they execute cleanly. Review table creation order, trailing commas, foreign-key references, and SQL Server-specific settings before use.
-- The schema export may contain machine-specific SQL Server file paths. Do not assume those paths exist on another computer.
-- The .vpp files require compatible modeling software to open.
