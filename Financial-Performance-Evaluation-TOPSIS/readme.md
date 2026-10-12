@@ -17,11 +17,6 @@ Can multiple financial indicators be combined into a single relative-performance
 
 ## Methodology
 
-The report describes equal weighting of the criteria:
-
-- **Turkey technology case:** 10 criteria, each assigned a weight of 0.10.
-- **Iranian oil and petrochemical case:** the report states that each of the 8 criteria has a weight of 0.10. These values sum to 0.80 rather than 1.00, so the weighting specification should be checked against the original Excel calculations before the results are reused.
-
 The TOPSIS process described in the report is:
 
 1. Build a decision matrix from the selected financial data.
