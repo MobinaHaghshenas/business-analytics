@@ -59,4 +59,4 @@ This academic project applies the Technique for Order Preference by Similarity t
 2. Review the underlying artifacts: process models and SQL for the information-system project; the Excel workbook and TOPSIS documentation for the financial-analysis project.
 3. Consider each result in the context of its data, assumptions, and stated limitations.
 
-چ
+
