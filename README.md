@@ -39,8 +39,6 @@ This academic project applies the Technique for Order Preference by Similarity t
 - Positive and negative ideal solutions, distance calculations, and relative-closeness scores
 - Comparison of TOPSIS rankings with the report's discussion of market value and fundamental analysis
 
-The README records a weighting inconsistency in the Iranian case that should be checked against the workbook before the calculations are reused. Reported rankings are presented as results from the source project, not as independently audited calculations or investment advice.
-
 **Skills demonstrated**
 - Financial ratio interpretation
 - Excel-based analytical modeling
@@ -61,10 +59,4 @@ The README records a weighting inconsistency in the Iranian case that should be 
 2. Review the underlying artifacts: process models and SQL for the information-system project; the Excel workbook and TOPSIS documentation for the financial-analysis project.
 3. Consider each result in the context of its data, assumptions, and stated limitations.
 
-## Scope and Limitations
-
-This repository is a portfolio of academic project artifacts, not a single integrated software application or production deployment. The presence of a SQL script, workbook, or report does not by itself imply that it has been independently validated, deployed, or connected to a live data source. Please refer to each project's README for project-specific implementation notes and limitations.
-
----
-
-*Maintained as a portfolio of business analytics and decision-support projects.*
+چ
