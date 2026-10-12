@@ -21,6 +21,4 @@ The repository keeps one SQL script to avoid confusing the project with duplicat
 
 The schema uses primary keys and foreign-key references to connect operational records across these areas.
 
-## Important note
 
-This is a project artifact, not a verified production-ready deployment script. Before execution, validate the SQL syntax, table-creation order, data types, and referential integrity. The current script contains trailing commas in some table definitions, and at least one sample production record refers to a material ID that is not present in the sample material records.
