@@ -87,7 +87,7 @@ These are the report's interpretations, not proof that TOPSIS rankings predict f
 ## Files
 
 - **Excel workbook:** contains the project calculations and/or financial data used in the analysis. Review the workbook's worksheets for the underlying calculation tables.
-- **PDF report:** provides the problem statement, literature review, description of the implemented TOPSIS model, the two case studies, conclusions, and references.
+
 
 ## Tools and Skills Demonstrated
 
@@ -99,17 +99,10 @@ These are the report's interpretations, not proof that TOPSIS rankings predict f
 - Comparative interpretation of company performance
 - Excel-based analytical work
 
-## Limitations
-
-- The report assigns equal weights to all criteria; it does not establish that the criteria have equal economic importance.
-- The ranking is relative to the companies and data included in each case study.
-- Financial ratios may require different benefit/cost directions, and the direction assigned to each criterion affects the ranking.
-- The report's conclusions should be interpreted as an academic analysis rather than investment advice.
-- The reported rankings are reproduced from the report and have not been independently recalculated or audited as part of this README.
 
 ## References and Data Source
 
-The report includes academic literature on TOPSIS, fuzzy multi-criteria decision-making, and financial performance evaluation. For the Iranian case study, the report identifies **Codal.ir** as its data source. Full bibliographic details are provided in the project report.
+The report includes academic literature on TOPSIS, fuzzy multi-criteria decision-making, and financial performance evaluation. For the Iranian case study, the report identifies **Codal.ir** as its data source. 
 
 ---
 
