@@ -1,6 +1,20 @@
-# Power BI Dashboard
+# Manufacturing Operations Dashboard
 
-- manufacturing-operations-dashboard.pbix — editable Power BI report.
-- manufacturing-operations-dashboard.pdf — PDF export for quick preview.
+## Deliverables
 
-The report includes views related to buyers, invoices, HR, production, products, and raw-material inventory. The PDF is a static export; use the PBIX file to inspect report pages and edit visuals. A live connection between this report and the SQL scripts has not been verified.
+- **`manufacturing-operations-dashboard.pbix`** — the editable Power BI report, intended for reviewing report pages, visuals, and data model details in Power BI Desktop.
+- **`manufacturing-operations-dashboard.pdf`** — a static export for convenient viewing without opening the PBIX file.
+
+## Reporting scope
+
+The report brings together management views across commercial, workforce, and production topics:
+
+- **Commercial activity:** buyers, geographic distribution, and invoice/factor-related information.
+- **Human resources:** job titles, employee counts, average salary, and salary comparisons by education.
+- **Production and materials:** production rate, manufactured products, raw-material inventory, and consumer/product quantities.
+
+The report pages include an HR-focused view and additional pages covering commercial and operational information. The PDF is useful for a quick overview; the PBIX should be used when inspecting or editing the interactive report.
+
+## Relationship to the database
+
+The report’s subject areas overlap with the entities represented in the SQL Server scripts, including buyers, employees, production, products, and raw materials. The repository does not by itself establish that the PBIX maintains a live connection to the included SQL script; treat the PBIX and SQL files as complementary project artifacts unless the data-source settings are verified in Power BI Desktop.
