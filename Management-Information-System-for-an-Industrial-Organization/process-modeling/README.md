@@ -21,4 +21,4 @@ This folder contains eight Visual Paradigm (`.vpp`) project files representing t
 
 The processes are cross-functional rather than isolated: production depends on raw-material availability and quality; warehouse shortages can trigger purchasing; maintenance affects equipment readiness; and workforce, accounting, and energy processes provide supporting controls and management information. These models establish the business-process context for the database and reporting artifacts elsewhere in the repository.
 
-Open the `.vpp` files with a compatible version of Visual Paradigm. The filenames use English descriptions; the original model files have been renamed, not recreated.
+Open the `.vpp` files with a compatible version of Visual Paradigm.
