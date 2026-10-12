@@ -2,46 +2,43 @@
 
 ## Project Overview
 
-This academic decision-analysis project applies the **Technique for Order Preference by Similarity to Ideal Solution (TOPSIS)** to rank companies using financial ratios. It explores how a structured, multi-criteria approach can support financial performance comparison within an industry.
+This academic decision-analysis project applies the **Technique for Order Preference by Similarity to Ideal Solution (TOPSIS)** to rank companies using financial ratios. It explores how a multi-criteria decision-making method can support comparative financial-performance analysis.
 
 The report presents two case studies:
 
-1. **Technology companies listed on Borsa Istanbul (Turkey):** 13 companies evaluated using 10 financial ratios.
-2. **Oil and petrochemical companies listed in Iran:** 12 companies evaluated using 8 financial indicators.
+1. **Technology companies listed on Borsa Istanbul, Turkey:** 13 companies evaluated using 10 financial ratios.
+2. **Iranian oil, refining, and petrochemical companies:** 12 companies evaluated using 8 financial indicators.
 
-The work follows the TOPSIS workflow documented in the report: construct a decision matrix, normalize the criteria, apply criterion weights, calculate distances from the positive and negative ideal solutions, compute each company's relative closeness score, and rank the alternatives.
+The documented TOPSIS workflow includes building a decision matrix, normalizing the criteria, applying weights, identifying positive and negative ideal solutions, calculating distances to those solutions, and ranking companies by their relative-closeness coefficients.
 
 ## Business Question
 
-Can companies in the same industry be compared more systematically by combining several financial indicators into one relative-performance score? The project also discusses whether a financial-ratio ranking aligns with market-value ranking, as well as the limits of using a single ranking method to interpret company performance.
+Can multiple financial indicators be combined into a single relative-performance ranking for companies in the same industry? The project also examines whether the TOPSIS ranking corresponds with market-value rankings and discusses the limitations of relying on one ranking method.
 
 ## Methodology
 
-The report assumes **equal importance for the criteria** in each case study:
+The report describes equal weighting of the criteria:
 
-- 10 criteria × 0.10 weight in the Turkey technology-company case.
-- 8 criteria × 0.10 weight in the Iran oil and petrochemical case.
+- **Turkey technology case:** 10 criteria, each assigned a weight of 0.10.
+- **Iranian oil and petrochemical case:** the report states that each of the 8 criteria has a weight of 0.10. These values sum to 0.80 rather than 1.00, so the weighting specification should be checked against the original Excel calculations before the results are reused.
 
-The TOPSIS calculation is organized into these steps:
+The TOPSIS process described in the report is:
 
-1. Build the decision matrix from the selected financial data.
-2. Normalize the decision matrix using vector (Euclidean) normalization.
-3. Multiply normalized values by the criterion weights to obtain the weighted normalized matrix.
-4. Identify the positive ideal solution (PIS) and negative ideal solution (NIS), accounting for whether a criterion is beneficial or non-beneficial.
-5. Calculate each company's Euclidean distance from the two ideal solutions.
-6. Calculate the relative closeness coefficient:
+1. Build a decision matrix from the selected financial data.
+2. Normalize the matrix using vector (Euclidean) normalization.
+3. Apply criterion weights to form the weighted normalized matrix.
+4. Identify the positive ideal solution (PIS) and negative ideal solution (NIS), accounting for beneficial and non-beneficial criteria.
+5. Calculate each company's Euclidean distance from both ideal solutions.
+6. Calculate the relative-closeness coefficient: `Cᵢ = Sᵢ⁻ / (Sᵢ⁻ + Sᵢ⁺)`.
+7. Rank the alternatives by their relative-closeness coefficients.
 
-   `Cᵢ = Sᵢ⁻ / (Sᵢ⁻ + Sᵢ⁺)`
-
-7. Rank companies by their relative closeness scores.
-
-A higher closeness coefficient indicates a company is closer to the positive ideal and farther from the negative ideal under the criteria and assumptions used in the model.
+A higher coefficient indicates greater relative closeness to the positive ideal solution under the criteria, weights, and assumptions used.
 
 ## Financial Criteria
 
-### Case Study 1 — Turkey Technology Companies
+### Case Study 1 — Turkish Technology Companies
 
-The report describes 10 financial ratios:
+The report lists the following 10 financial ratios:
 
 | Criterion | Financial ratio |
 | --- | --- |
@@ -56,53 +53,70 @@ The report describes 10 financial ratios:
 | C9 | Working capital turnover |
 | C10 | Return on assets (ROA) |
 
-The companies listed in the report are Alcatel, Anel, Arena, Armada, Aselsan, Datagate, Escort, Indeks, Karel, Klink, Logo, Netas, and Plastik K.
+The companies named in the report are Alcatel, Anel, Arena, Armada, Aselsan, Datagate, Escort, Indeks, Karel, Klink, Logo, Netas, and Plastik K.
 
-**Reported result:** Plastik K. receives rank 1, followed by Karel (rank 2) and Netas (rank 3) in the report's TOPSIS ranking.
+**Reported TOPSIS result:** Plastik K. ranks first, followed by Karel (second) and Netas (third).
 
-### Case Study 2 — Iranian Oil and Petrochemical Companies
+### Case Study 2 — Iranian Oil, Refining, and Petrochemical Companies
 
 The report compares 12 companies using eight indicators grouped into four areas:
 
-| Area | Criteria |
-| --- | --- |
-| Profitability | C1: Net profit margin; C2: Return on assets (ROA); C3: Return on equity (ROE) |
-| Efficiency | C4: Asset turnover; C5: Fixed-asset turnover |
-| Leverage / risk | C6: Total liabilities to total assets (treated as a negative criterion in the report) |
-| Liquidity | C7: Current ratio; C8: Quick ratio |
+| Category | Indicators |
+|---|---|
+| Profitability | Net Profit Margin; Return on Assets (ROA); Return on Equity (ROE) |
+| Efficiency | Asset Turnover; Fixed Asset Turnover |
+| Leverage and risk | Total Liabilities to Total Assets (treated as a negative criterion in the report) |
+| Liquidity | Current Ratio; Quick Ratio |
 
-The companies are Shapna, Shabندر, Shenفت, Shتران, Shabriz, Shسپا, Shبهرن, Shavan, Shiraz, Shranل, Shpas, and Shزنگ, identified in the Persian report by their Iranian market tickers. Their names are retained here in the form used in the source report where practical.
+The companies are identified below by their market tickers as given in the Persian report. English company names are provided for readability.
 
-**Reported result:** Shتران (Tehran Oil Refining Company; ticker شتران) ranks first, followed by Shabriz (شبرِیز) and Shabندر (شبندر), according to the report's TOPSIS calculation.
+| No. | Company name | Ticker |
+|---:|---|---|
+| 1 | Isfahan Oil Refining Company | شپنا |
+| 2 | Bandar Abbas Oil Refining Company | شبندر |
+| 3 | Naft Pars Company | شنفت |
+| 4 | Tehran Oil Refining Company | شتران |
+| 5 | Tabriz Oil Refining Company | شبریز |
+| 6 | Sepahan Oil Company | شسپا |
+| 7 | Behran Oil Company | شبهرن |
+| 8 | Lavan Oil Refining Company | شاوان |
+| 9 | Shiraz Oil Refining Company | شراز |
+| 10 | Iranol Oil Company | شرانل |
+| 11 | Pasargad Oil Company | شپاس |
+| 12 | Rangin Chemical Industries | شزنگ |
+
+**Reported TOPSIS result:** Tehran Oil Refining Company (شتران) ranks first, followed by Tabriz Oil Refining Company (شبریز) and Bandar Abbas Oil Refining Company (شبندر).
+
+The rankings above are transcribed from the report and have not been independently recalculated.
 
 ## Findings and Interpretation
 
-The report reaches different conclusions for the two markets:
+The report draws different conclusions for the two markets:
 
-- **Turkey technology case:** the report states that the TOPSIS ranking did not align sufficiently with market-value rankings over the period discussed, and cautions that TOPSIS alone was not sufficient to assess the financial performance of the technology companies in that context.
-- **Iran oil and petrochemical case:** the report concludes that its TOPSIS results are broadly consistent with the fundamental assessment of the more established companies considered.
+- **Turkish technology companies:** the report says the TOPSIS ranking did not sufficiently align with market-value rankings during the period studied and cautions against relying on TOPSIS alone to assess those companies.
+- **Iranian oil and petrochemical companies:** the report concludes that its TOPSIS results broadly agree with the fundamental assessment of the more established companies considered.
 
-These are the report's interpretations, not proof that TOPSIS rankings predict future share prices. Results depend on the selected companies, financial data, criterion definitions, weights, and treatment of beneficial versus non-beneficial indicators.
+These are the report's interpretations, not evidence that the rankings predict future share prices or constitute investment recommendations. Results depend on the selected companies, data period, financial ratios, weights, and benefit/cost direction assigned to each criterion.
 
-## Files
+## Project File
 
-- **Excel workbook:** contains the project calculations and/or financial data used in the analysis. Review the workbook's worksheets for the underlying calculation tables.
+- [Excel workbook — TOPSIS Financial Performance Analysis](TOPSIS-Financial-Performance-Analysis.xlsx)
 
+The workbook should be reviewed to verify the underlying data, formulas, criterion directions, and the Iranian case's reported weights.
 
 ## Tools and Skills Demonstrated
 
-- Multi-criteria decision analysis (MCDM)
+- Multi-criteria decision-making (MCDM)
 - TOPSIS ranking methodology
 - Financial ratio analysis
 - Decision-matrix normalization and weighting
-- Euclidean distance and relative-closeness calculations
+- Euclidean-distance and relative-closeness calculations
 - Comparative interpretation of company performance
 - Excel-based analytical work
 
+## Data Source and References
 
-## References and Data Source
-
-The report includes academic literature on TOPSIS, fuzzy multi-criteria decision-making, and financial performance evaluation. For the Iranian case study, the report identifies **Codal.ir** as its data source. 
+The report identifies **Codal.ir** as the data source for the Iranian case study and includes academic literature on TOPSIS, multi-criteria decision-making, and financial-performance evaluation. Refer to the original project report for the full bibliography.
 
 ---
 
