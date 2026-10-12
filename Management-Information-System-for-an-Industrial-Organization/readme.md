@@ -1,18 +1,45 @@
-# Management Information System for an Industrial Organization
+# Industrial Organization Management Information System
 
-This project brings together process models, a SQL Server database script, and a Power BI dashboard for an industrial/manufacturing organization.
+## Project overview
 
-## Project components
+This project models key operational and administrative processes of an industrial organization and brings the work together through a relational database design and a Power BI reporting layer. The portfolio demonstrates how business processes can be documented, represented as data entities and relationships, and explored through management-facing reports.
 
-- **Process modeling** — Visual Paradigm (.vpp) models for warehouse management, energy management, production planning and control, financial accounting, product production, human resources, maintenance, and quality control.
-- **Database** — database/manufacturing-operations-database.sql is the main working SQL script, including table definitions and sample records. database/manufacturing-operations-schema-export.sql is a separate SQL Server-generated schema export for the database named EX3; it is retained as a reference, not as a second recommended setup script.
-- **Power BI** — The editable .pbix report and its PDF export.
-- **SQL exercises** — A separate practice script for DML, joins, and aggregation, kept outside the main database folder.
+## Business scope
 
-## Suggested review order
+The process models cover eight functional areas:
 
-1. Read the process-modeling overview.
-2. Review and run the main database script in a test SQL Server database only after checking/fixing its schema and data-integrity issues.
-3. Open the Power BI report and compare its fields and measures with the database.
+- **Energy management** — review of electricity substations and energy consumption, reporting, and escalation when usage remains abnormal.
+- **Maintenance and repairs** — equipment inspection, preventive maintenance planning, emergency repair handling, and return-to-production checks.
+- **Production planning and control** — review of production notices and raw-material information, planning, collection of operating statistics, and periodic reporting.
+- **Product production** — ore inspection and routing through crushing, drying, storage, and production-line decisions.
+- **Quality control** — measurement against standards, reinspection where results do not conform, and quality reporting.
+- **Human resources** — organizational structure, role responsibilities, recruitment, candidate review, onboarding/training, and employee feedback.
+- **Financial accounting** — review and registration of financial documents, payroll and statutory lists, treasury activities, and financial reporting.
+- **Warehouse management** — stock verification, shortage escalation and purchasing requests, issuing materials, and updating inventory records.
 
+## Repository structure
 
+| Folder / file | Purpose |
+|---|---|
+| `process-modeling/` | Eight Visual Paradigm project files documenting the business processes above |
+| `database/manufacturing-operations-database.sql` | Main SQL Server script containing table definitions, sample records, and table-inspection queries |
+| `database/manufacturing-operations-schema-export.sql` | Separate SQL Server-generated schema export associated with the database name `EX3` |
+| `database/ex3.ssmssln` | SQL Server Management Studio solution file |
+| `power-bi/manufacturing-operations-dashboard.pbix` | Editable Power BI report |
+| `power-bi/manufacturing-operations-dashboard.pdf` | Static PDF version of the report for quick review |
+
+## Data and reporting
+
+The relational model represents operational and supporting entities such as raw materials, manufactured products, suppliers, consumers, buyers, contractors, employees, job/department assignments, accounting, warehouse inventory, consumption, purchasing, production, sales, invoices/factors, and training courses. Foreign-key relationships connect records across these areas.
+
+The Power BI report presents views related to buyers and invoices, workforce composition and salary, production rates, products, and raw-material inventory/consumption. The PBIX is the primary artifact for exploring report pages and visuals; the PDF is a read-only snapshot.
+
+## How to explore the project
+
+1. Start with the process models to understand the operational workflows and decision points.
+2. Review the main SQL script to understand the entities, attributes, relationships, and sample data.
+3. Open the Power BI report to explore the management views and compare the reported concepts with the database model.
+
+## Implementation context
+
+The repository contains the project artifacts rather than a packaged production deployment. The main SQL script and the generated schema export are separate database artifacts and should not be executed as consecutive setup steps. The Power BI report is included as a report deliverable; a live data connection from the PBIX to the committed SQL script is not established by the repository files alone.
