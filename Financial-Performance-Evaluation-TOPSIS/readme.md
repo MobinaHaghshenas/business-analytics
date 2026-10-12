@@ -95,7 +95,6 @@ The report draws different conclusions for the two markets:
 - **Turkish technology companies:** the report says the TOPSIS ranking did not sufficiently align with market-value rankings during the period studied and cautions against relying on TOPSIS alone to assess those companies.
 - **Iranian oil and petrochemical companies:** the report concludes that its TOPSIS results broadly agree with the fundamental assessment of the more established companies considered.
 
-These are the report's interpretations, not evidence that the rankings predict future share prices or constitute investment recommendations. Results depend on the selected companies, data period, financial ratios, weights, and benefit/cost direction assigned to each criterion.
 
 ## Project File
 
