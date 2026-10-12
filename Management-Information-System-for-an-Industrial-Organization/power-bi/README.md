@@ -14,7 +14,3 @@ The report brings together management views across commercial, workforce, and pr
 - **Production and materials:** production rate, manufactured products, raw-material inventory, and consumer/product quantities.
 
 The report pages include an HR-focused view and additional pages covering commercial and operational information. The PDF is useful for a quick overview; the PBIX should be used when inspecting or editing the interactive report.
-
-## Relationship to the database
-
-The report’s subject areas overlap with the entities represented in the SQL Server scripts, including buyers, employees, production, products, and raw materials. The repository does not by itself establish that the PBIX maintains a live connection to the included SQL script; treat the PBIX and SQL files as complementary project artifacts unless the data-source settings are verified in Power BI Desktop.
