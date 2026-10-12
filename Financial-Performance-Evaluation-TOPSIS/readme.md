@@ -68,7 +68,6 @@ The report compares 12 companies using eight indicators grouped into four areas:
 | Leverage and risk | Total Liabilities to Total Assets (treated as a negative criterion in the report) |
 | Liquidity | Current Ratio; Quick Ratio |
 
-The companies are identified below by their market tickers as given in the Persian report. English company names are provided for readability.
 
 | No. | Company name | Ticker |
 |---:|---|---|
@@ -87,7 +86,7 @@ The companies are identified below by their market tickers as given in the Persi
 
 **Reported TOPSIS result:** Tehran Oil Refining Company (شتران) ranks first, followed by Tabriz Oil Refining Company (شبریز) and Bandar Abbas Oil Refining Company (شبندر).
 
-The rankings above are transcribed from the report and have not been independently recalculated.
+
 
 ## Findings and Interpretation
 
@@ -102,7 +101,7 @@ These are the report's interpretations, not evidence that the rankings predict f
 
 - [Excel workbook — TOPSIS Financial Performance Analysis](TOPSIS-Financial-Performance-Analysis.xlsx)
 
-The workbook should be reviewed to verify the underlying data, formulas, criterion directions, and the Iranian case's reported weights.
+
 
 ## Tools and Skills Demonstrated
 
@@ -116,7 +115,7 @@ The workbook should be reviewed to verify the underlying data, formulas, criteri
 
 ## Data Source and References
 
-The report identifies **Codal.ir** as the data source for the Iranian case study and includes academic literature on TOPSIS, multi-criteria decision-making, and financial-performance evaluation. Refer to the original project report for the full bibliography.
+The report identifies **Codal.ir** as the data source for the Iranian case study and includes academic literature on TOPSIS, multi-criteria decision-making, and financial-performance evaluation. 
 
 ---
 
